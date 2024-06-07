@@ -24,7 +24,85 @@
 
     <title>Página FAQ</title>
   </head>
-  <body>
+  <body class="flex justify-center bg-[#d3eaff] h-screen font-mono">
+    <main
+      class="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr_1fr] gap-x-12 items-center shadow-md w-11/12 bg-white my-40 mx-auto rounded-[10px]"
+    >
+      <picture class="row-span-3">
+        <img src="./img/FAQ.svg" alt="" />
+      </picture>
+
+      <header class="justify-center rounded-t-[10px]">
+        <h1 class="py-8 text-3xl text-[#292524] font-bold">
+          Perguntas frequentes
+        </h1>
+      </header>
+
+      <article class="col-start-2 row-start-2 row-end-4">
+        <dl class="flex flex-col gap-4">
+          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+            <dt>
+              <button
+                aria-controls="pergunta1"
+                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+              >
+                Como faço para redefinir minha senha?
+              </button>
+            </dt>
+            <dd id="pergunta1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+              ullam.
+            </dd>
+          </div>
+
+          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+            <dt>
+              <button
+                aria-controls="pergunta2"
+                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+              >
+                Quais são os métodos de pagamento aceitos?
+              </button>
+            </dt>
+            <dd id="pergunta2" class="hidden">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
+              dolorem distinctio blanditiis obcaecati dicta provident.
+            </dd>
+          </div>
+
+          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+            <dt>
+              <button
+                aria-controls="pergunta3"
+                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+              >
+                Qual é a política de reembolso?
+              </button>
+            </dt>
+            <dd id="pergunta3" class="hidden">
+              Nosso objetivo é garantir a sua satisfação. Se você não estiver
+              satisfeito com o nosso produto, aceitamos solicitações de
+              reembolso até 30 dias após a compra. Entre em contato com o nosso
+              suporte ao cliente.
+            </dd>
+          </div>
+
+          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+            <dt>
+              <button
+                aria-controls="pergunta4"
+                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+              >
+                Como entro em contato com o suporte?
+              </button>
+            </dt>
+            <dd id="pergunta4" class="hidden">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </dd>
+          </div>
+        </dl>
+      </article>
+    </main>
     <script src="./src/script.js"></script>
   </body>
 </html>
