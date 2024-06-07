@@ -24,19 +24,24 @@
 
     <title>Página FAQ</title>
   </head>
+
   <body class="flex justify-center bg-[#d3eaff] h-screen font-mono">
     <main
-      class="grid grid-cols-[auto_1fr] grid-rows-[auto_1fr_1fr] gap-x-12 items-center shadow-md w-11/12 bg-white my-40 mx-auto rounded-[10px]"
+      class="grid grid-cols-[minmax(600px, 1fr)_1fr] grid-rows-[100px_1fr_1fr] gap-x-8 items-center shadow-md w-11/12 max-w-[1000px] bg-white rounded-[10px] m-auto p-5 max-[768px]:flex max-[768px]:flex-col"
     >
-      <picture class="row-span-3">
-        <img src="./img/FAQ.svg" alt="" />
-      </picture>
-
-      <header class="justify-center rounded-t-[10px]">
-        <h1 class="py-8 text-3xl text-[#292524] font-bold">
+      <header
+        class="justify-center rounded-t-[10px] col-start-2 max-[768px]:py-7"
+      >
+        <h1
+          class="text-3xl text-[#292524] font-bold self-end max-[400px]:text-center"
+        >
           Perguntas frequentes
         </h1>
       </header>
+
+      <picture class="flex justify-end row-span-3">
+        <img src="./img/FAQ.svg" alt="" />
+      </picture>
 
       <article class="col-start-2 row-start-2 row-end-4">
         <dl class="flex flex-col gap-4">
@@ -44,7 +49,7 @@
             <dt>
               <button
                 aria-controls="pergunta1"
-                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+                class="mb-1 w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
               >
                 Como faço para redefinir minha senha?
               </button>
@@ -59,7 +64,7 @@
             <dt>
               <button
                 aria-controls="pergunta2"
-                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+                class="mb-1 w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
               >
                 Quais são os métodos de pagamento aceitos?
               </button>
@@ -74,7 +79,7 @@
             <dt>
               <button
                 aria-controls="pergunta3"
-                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+                class="mb-1 w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
               >
                 Qual é a política de reembolso?
               </button>
@@ -91,7 +96,7 @@
             <dt>
               <button
                 aria-controls="pergunta4"
-                class="w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
+                class="mb-1 w-full text-start font-bold text-xl after:content-[''] after:block after:bg-[url('/img/seta-abrir.svg')] after:w-[14px] after:h-[6px] after:transition after:duration-300 hover:after:rotate-180 grid grid-cols-[1fr_auto] items-center"
               >
                 Como entro em contato com o suporte?
               </button>
