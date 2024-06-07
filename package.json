@@ -1,0 +1,13 @@
+{
+  "name": "pagina-faq",
+  "version": "1.0.0",
+  "description": "Crie uma página contendo as respostas para as perguntas mais frequentes do seu site. Neste mini projeto, utilize sua criatividade para implementar um design moderno e responsivo para uma página de FAQ com HTML, CSS e JavaScript.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
