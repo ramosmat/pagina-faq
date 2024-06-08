@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,9 @@
       content="Página FAQ - Todas as informações que você precisa."
     />
 
-    <!-- <link rel="icon" href="./img/favicons/cat-96.png" type="image/svg+xml" />
-    <link rel="preload" href="./style.css" as="style" />
-    <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="icon" href="./img/faq-icon.png" type="image/svg+xml" />
+    <link rel="preload" href="./dist/output.min.css" as="style" />
+    <link rel="stylesheet" href="./dist/output.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,14 +20,14 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./dist/output.min.css" />
 
     <title>Página FAQ</title>
   </head>
 
   <body class="flex justify-center bg-[#d3eaff] h-screen font-mono">
     <main
-      class="grid grid-cols-[minmax(600px, 1fr)_1fr] grid-rows-[100px_1fr_1fr] gap-x-8 items-center shadow-md w-11/12 max-w-[1000px] bg-white rounded-[10px] m-auto p-5 max-[768px]:flex max-[768px]:flex-col"
+      class="grid grid-cols-[minmax(600px, 1fr)_1fr] grid-rows-[100px_1fr_1fr] gap-x-8 items-center shadow-md w-11/12 max-w-[1000px] min-h-[600px] bg-white rounded-[10px] m-auto p-5 max-[768px]:flex max-[768px]:flex-col max-[768px]:gap-8"
     >
       <header
         class="justify-center rounded-t-[10px] col-start-2 max-[768px]:py-7"
@@ -45,7 +45,10 @@
 
       <article class="col-start-2 row-start-2 row-end-4">
         <dl class="flex flex-col gap-4">
-          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+          <div
+            data-pergunta
+            class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm shadow-md shadow-[#a8d4ff]"
+          >
             <dt>
               <button
                 aria-controls="pergunta1"
@@ -54,13 +57,20 @@
                 Como faço para redefinir minha senha?
               </button>
             </dt>
-            <dd id="pergunta1">
+            <dd
+              data-resposta
+              id="pergunta1"
+              class="animate-show-down max-w-[450px]"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
               ullam.
             </dd>
           </div>
 
-          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+          <div
+            data-pergunta
+            class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm"
+          >
             <dt>
               <button
                 aria-controls="pergunta2"
@@ -69,13 +79,20 @@
                 Quais são os métodos de pagamento aceitos?
               </button>
             </dt>
-            <dd id="pergunta2" class="hidden">
+            <dd
+              data-resposta
+              id="pergunta2"
+              class="animate-show-down hidden max-w-[450px]"
+            >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia
               dolorem distinctio blanditiis obcaecati dicta provident.
             </dd>
           </div>
 
-          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+          <div
+            data-pergunta
+            class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm"
+          >
             <dt>
               <button
                 aria-controls="pergunta3"
@@ -84,7 +101,11 @@
                 Qual é a política de reembolso?
               </button>
             </dt>
-            <dd id="pergunta3" class="hidden">
+            <dd
+              data-resposta
+              id="pergunta3"
+              class="animate-show-down hidden max-w-[450px]"
+            >
               Nosso objetivo é garantir a sua satisfação. Se você não estiver
               satisfeito com o nosso produto, aceitamos solicitações de
               reembolso até 30 dias após a compra. Entre em contato com o nosso
@@ -92,7 +113,10 @@
             </dd>
           </div>
 
-          <div data-button class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm">
+          <div
+            data-pergunta
+            class="border-[#a8d4ff] border-l-2 p-2 rounded-l-sm"
+          >
             <dt>
               <button
                 aria-controls="pergunta4"
@@ -101,7 +125,11 @@
                 Como entro em contato com o suporte?
               </button>
             </dt>
-            <dd id="pergunta4" class="hidden">
+            <dd
+              data-resposta
+              id="pergunta4"
+              class="animate-show-down hidden max-w-[450px]"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </dd>
           </div>
